@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Megatron | Leader of the Decepticons</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* BACKGROUND */
+.bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: url("image/silver.jpg") center/cover no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(242, 242, 242, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #444;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: #ccc;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header hr {
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* GALLERY SLIDER */
+.gallery {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    height: 280px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* QUOTE */
+.quote-box {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+.quote-box q {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+pre {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ABOUT CARD */
+.about {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-size: 1.5rem;
+    color: crimson;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* LINK SECTION */
+.links {
+    text-align: center;
+    padding: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    background: #444;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    background: crimson;
+}
+
+/* FOOTER QUOTE */
+footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-overlay"></div>
+
+<nav class="navbar">
+    <div class="logo">CYBERTRON</div>
+    <ul>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Megatron — Leader of the Decepticons</h1>
+    <hr>
+</header>
+
+<section class="gallery">
+    <img src="image/megatron.jpg" alt="Megatron">
+    <img src="image/IDW-Meg.jpg" alt="IDW Megatron">
+    <img src="image/Meg1.jpg" alt="Megatron form 1">
+    <img src="image/Meg3.jpg" alt="Megatron form 3">
+    <img src="image/Meg2.jpg" alt="Megatron form 2">
+</section>
+
+<section class="quote-box">
+    <q>Peace through tyranny</q>
+    <blockquote>
+        "The strong survive, the weak perish. This is the way of the universe."
+    </blockquote>
+    <pre>— A quote often attributed to Megatron</pre>
+</section>
+
+<section class="about">
+    <h1>Who is He?</h1>
+    <p>
+        Megatron, Leader of the Decepticons — originally a miner from a lower caste
+        on the planet Cybertron.
+    </p>
+    <p><strong>Pemimpin faksi Decepticon</strong></p>
+    <p><small>Musuh terbesar Optimus Prime dari faksi Autobot</small></p>
+    <p><em>Once brothers, now enemies on different paths.</em></p>
+    <p>
+        Sistem <sub>kasta</sub> di Cybertron mendorongnya untuk menghancurkan pemerintahan,
+        namun dalam perjalanannya, ia <sup>melupakan</sup> tujuan awalnya
+        dan berubah menjadi pemimpin yang kejam.
+    </p>
+    <div class="highlight">
+        Sama seperti pemerintah yang ingin ia hancurkan di awal.
+    </div>
+</section>
+
+<section class="links">
+    <a href="https://tfwiki.net/wiki/Megatron_(G1)" target="_blank">
+        Explore Megatron’s Past
+    </a>
+</section>
+
+<footer>
+    <q>Peace through tyranny</q><br>
+    <small>The strong survive, the weak perish.</small>
+</footer>
+
+</body>
+</html>
