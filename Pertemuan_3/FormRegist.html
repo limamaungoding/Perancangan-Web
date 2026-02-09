@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Form Regist</title>
+    </head>
+    <body>
+        <!-- Kolom 5 (tr nya 5)-->
+        <!-- Baris 3 (td nya 3)-->
+        <form name="registrasi" action="Confirm.html" method="post">
+            <table>
+                <tr>
+                    <th colspan="3">Formulir Registrasi</th>
+                </tr>
+                <tr>
+                    <td>Nama Anda</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" maxlength="30" rows="1" cols="25"></input></td>
+                </tr>
+                <tr>
+                    <td>Password Anda</td>
+                    <td>:</td>
+                    <td><input type="password" name="psw" maxlength="30" rows="1" cols="25"></input></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" name="gender" value="cwo">Laki-Laki</input>
+                    <input type="radio" name="gender" value="cwe">Perempuan</input></td>
+                </tr>
+                <tr>
+                    <td>Binatang Kesayangan</td>
+                    <td>:</td>
+                    <td><select name="hewan" size="1">
+                        <option selected value="cat"> Kucing
+                        <option value="klc"> Kelinci
+                        <option value="hms"> Hamster
+                        <option value="sp"> Sapi
+                        <option value="hr"> Harimau
+                        <option value="ulr"> Ular
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Kirimkan data"></td>
+                    <td>&nbsp;</td>
+                    <td><input type="reset" value="Hapus formulir"></td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
