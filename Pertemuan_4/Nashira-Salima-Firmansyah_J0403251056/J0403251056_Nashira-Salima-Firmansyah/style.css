@@ -1,0 +1,99 @@
+* {
+            box-sizing: border-box;
+        }
+
+        #main {
+            width: 100%;
+            margin: 0 auto;
+            border: 2px solid white;
+            padding: 1px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #header {
+            width: 100%;
+            padding: 1px;
+            margin: 1px;
+            border: 2px solid white;
+            text-align: center;
+            height: 300px;
+            color: white;
+            font-size: 50px;
+            background: #c0b1e8 url(Meg.jpg) no-repeat center;
+            background-size: contain;
+        }
+
+
+        #navbar {
+            width: 100%;
+            padding: 1px;
+            margin: 1px;
+            border: 2px solid white;
+            text-align: center;
+            background-color: #c0b1e8;  
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar li {
+            display: inline-block; 
+            margin: 0 15px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: rgb(139, 123, 123);       
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #profil {
+            flex: 6.9;
+            font-family: 'Lucida Sans', sans-serif;
+            border: 1px solid white;
+            color: rgb(94, 86, 86);
+            background-color: #c0b1e8;
+            margin: 2px;
+            padding: 15px; 
+        }
+        #profil h2{
+            text-align: left;
+            margin: 2px;
+        }
+        #profil p{
+            text-align: left;
+            margin: 2px;
+            padding: 2px;
+        }
+        
+        #news {
+            flex: 3;
+            float: right;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 1px solid white;
+            color: rgb(94, 86, 86);
+            background-color: #c0b1e8;
+            margin: 2px;
+            padding: 2px;
+
+        }
+
+        #news h1 {
+            text-align: center;
+        }
+
+        #news p {
+            text-align: left;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2px;
+        }
