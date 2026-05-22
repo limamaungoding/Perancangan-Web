@@ -1,0 +1,33 @@
+<daftarMhs>
+	<mhs>
+		<nim>J79086432</nim>
+		<nama>Arianto Raihan</nama>
+		<foto>anto.png</foto>
+	</mhs>
+	<mhs>
+		<nim>J78754808</nim>
+		<nama>Penaka Jenaka</nama>
+		<foto>vampen.png</foto>
+	</mhs>
+	
+	<mhs>
+		<nim>J73457075</nim>
+		<nama>Coda Coding</nama>
+		<foto>cod.png</foto>
+	</mhs>
+	<mhs>
+		<nim>J76765369</nim>
+		<nama>Morgan Genjreng</nama>
+		<foto>mord.png</foto>
+	</mhs>
+	<mhs>
+		<nim>J76764859</nim>
+		<nama>Roti tawar</nama>
+		<foto>oti.png</foto>
+	</mhs>
+	<mhs>
+		<nim>J76767489</nim>
+		<nama>Igna</nama>
+		<foto>igna.png</foto>
+	</mhs>
+</daftarMhs>

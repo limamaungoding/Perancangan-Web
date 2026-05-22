@@ -1,0 +1,36 @@
+body {
+	background-color: #FFC0BE;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	
+}
+
+.transparent {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.transparent a img {
+	opacity: 0.8;
+	margin-bottom: 25px;
+}
+
+.transparent a:hover img {
+	opacity: 1;
+}
+
+
+.dynapuff-regular {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+.page-header h1{
+	text-align: center;
+	color: #b2847f;
+}

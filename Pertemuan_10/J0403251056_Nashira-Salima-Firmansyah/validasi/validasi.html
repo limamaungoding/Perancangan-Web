@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Validasi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript">
+  function validasi(){
+   var X=document.f1;
+   var H=X.nim.value.toLowerCase();
+   //document.write(H);
+   var status=true;
+   pesan1="";
+   pesan2="";
+   if(H.indexOf('j3c')!=0 ){
+		status=false;
+   //alert("NIM salah");
+       X.nim.focus();
+       X.nim.select();
+        pesan1="NIM";
+   }   
+    if(X.e.value.indexOf('@')==-1){
+	   //alert("Email salah");
+	   X.e.focus()
+	   X.e.select()
+        pesan2="Email";status=false;
+   }   
+   if(status==true){
+      alert("Anda akan segera ke halaman selanjutnya");
+	  X.nim.value=H;
+	  return status;}
+	  
+      pesan=""
+      pesan=pesan1;
+	  if(pesan1 && pesan2){
+	     pesan=pesan+ " dan ";
+		 }
+	  pesan=pesan+pesan2;	 
+      alert("Isian Anda salah Pada "+ pesan);
+	  X.nim.value=H;
+	  return status;   		
+  // return false;
+  }
+  function resetTGL(n){
+    target=document.f1
+	n=target.bln.value;
+	if(n==1 || n==3 || n==5 ||n==7 ||n==8 ||n==10 ||n==12)
+	   maxDay=31;
+	else if(n==2){
+	   if((parseInt(target.th.value)%4)==0) maxDay=29;
+	   else maxDay=28;     
+	}   
+	else{
+	  maxDay=30;
+	}	
+	for(i=(target.tgl.options.length)-1;i>=0;i--){
+	   target.tgl.remove(i);}	   
+	for(i=0;i<=(maxDay-1);i++){
+	  var opt=document.createElement("OPTION");
+	  opt.text=(i+1);
+	  opt.value=i;
+	  target.tgl.options.add(opt);
+	}
+  }  
+</script>
+</head>
+<body><center>
+  <form name="f1" action="hal2.html" onSubmit="return validasi()">
+   nama : <input type="text" name="n"><br/>
+   email : <input type="text" name="e"><br/>
+    nim &nbsp;&nbsp;:
+   <input type="text" name="nim"><br/>
+   <input type="submit" value="Kirim">
+   <br><br>
+   Tahun:<select name="th" onChange="resetTGL()">
+                 <script language="javascript">
+				  for(i=2005;i>=1988;i--){
+				     string="<option value='"+i+"'>"+i+"</option>";
+				     document.write(string);
+					 }					 
+				 </script>
+       </select>
+	   Bulan:<select name="bln" onChange="resetTGL()">
+                 <script language="javascript">
+				 var bulan=new Array();
+				 bulan[1]="Januari";
+				 bulan[2]="Februari";
+				 bulan[3]="Maret";
+				 bulan[4]="April";				 
+				 bulan[5]="Mei";
+				 bulan[6]="Juni";
+				 bulan[7]="Juli";
+				 bulan[8]="Agustus";				 
+				 bulan[9]="september";
+				 bulan[10]="Oktober";
+				 bulan[11]="November";
+				 bulan[12]="Desember";
+				 
+				  for(i=1;i<=12;i++){
+				     string="<option value='"+i+"'>"+bulan[i]+"</option>";
+				     document.write(string);
+					 }					 
+				 </script>
+       </select>	   
+	   Tanggal:<select name="tgl">
+	    <script>  
+		  for(i=0;i<=30;i++){
+				     string="<option value='"+i+"'>"+(i+1)+"</option>";
+				     document.write(string);
+					 }
+		</script>			 
+	   </select>
+  </form>
+  </center></body></html>

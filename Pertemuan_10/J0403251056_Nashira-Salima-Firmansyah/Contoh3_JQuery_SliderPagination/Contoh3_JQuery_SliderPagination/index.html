@@ -1,0 +1,45 @@
+<html lang="en">
+	<head>
+        <title>Contoh_JQuery_3_ Slider Pagination </title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<header class="clearfix">
+				<h1>*Effect* JQuery_Contoh 3 <span> Slider Pagination Concept</span></h1>
+			</header>
+			<div class="main">
+				<div id="preview" class="preview">
+					<span>1</span>
+				</div>
+				<div id="slider" class="sp-slider-wrapper">
+					<nav>
+						<a href="#" class="sp-prev">Previous</a>
+						<a href="#" class="sp-next">Next</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/jquery.pagination.js"></script>
+		<script>
+			$(function() {
+
+				var $update = $( '#preview > span' );
+
+				$( "#slider" ).pagination( {
+					total : 100,
+					onChange : function( value ) {
+						$update.text( value );
+					}
+				} );
+
+			});
+		</script>
+	</body>
+</html>

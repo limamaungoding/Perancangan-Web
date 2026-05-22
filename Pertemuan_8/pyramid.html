@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tampilkan Piramid</title>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #hasilPiramid {
+            margin-top: 20px;
+            background-color: #fff9c4;
+            display: inline-block;
+            padding: 20px;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="buatPiramid()">Tampilkan Piramid</button>
+    <br>
+    <div id="hasilPiramid"></div>
+
+    <script>
+        function buatPiramid() {
+            var tinggi = window.prompt("Berapa meter tinggi piramid yang diinginkan (maksimal:20)?");
+            
+            
+            tinggi = parseInt(tinggi);
+
+           
+            if (isNaN(tinggi) || tinggi <= 0) {
+                alert("Mohon masukkan angka yang valid!");
+                return;
+            }
+            if (tinggi > 20) {
+                alert("Maksimal tinggi adalah 20!");
+                tinggi = 20;
+            }
+
+            var cetak = "";
+
+            
+            for (var i = 1; i <= tinggi; i++) {
+                
+                for (var j = 1; j <= i; j++) {
+                    cetak += "* ";
+                }
+                
+                cetak += "<br>";
+            }
+
+            document.getElementById("hasilPiramid").innerHTML = cetak;
+        }
+    </script>
+</body>
+</html>

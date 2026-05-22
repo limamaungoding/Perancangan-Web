@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>
+        tulisan berwarna
+    </title>
+</head>
+<body>
+<script language="javascript">
+    //menampilkan tulisan berwarna merah
+    document.write("<font color='red'> Selamat Hari Raya Idul Fitri </font> <br />");
+    // message boxm hanya ada satu button ok
+    window.alert("Selamat datang di Kota Bogor ");
+
+    //confirm ada dua button: ok dan cancel
+    var jawab=window.confirm("Apakah anda ingin pulang ke Bogor? ");
+    document.write(" Jawaban anda " + jawab);
+
+    //menanyakan sapaan pengunjung
+    var pengunjung=prompt("Tulis nama anda di sini", "Yup disini");
+    document.write(" Hai " + pengunjung + " bagaimana kabar anda hari ini?")
+
+    var depan="teknologi ";
+    var belakang= " perangkat lunak ";
+    nama = depan + belakang;
+    document.write(" <br/> Program studi " + nama)
+    document.write(" <br/> Panjang Kata " + nama.length)
+</script>
+</body>
+</html>
